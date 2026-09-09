@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rutas de adquisición de Ferreterías Iberia: proveedor nacional y ZOFRI hacia Arica/ZFE, con anotaciones normativas.">
+  <title>Rutas de adquisición · Ferreterías Iberia</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead"><div class="brand">FERRETERÍAS <strong>IBERIA</strong></div><span>Rutas de adquisición</span></header>
+    <nav class="toolbar" aria-label="Rutas de adquisición">
+      <div class="routes"><button type="button" data-route="A">Ruta A</button><button type="button" data-route="B" class="active" aria-current="page">Ruta B</button><button type="button" disabled>Ruta C <small>Próximamente</small></button><button type="button" disabled>Ruta D <small>Próximamente</small></button></div>
+      <button type="button" id="toggle-notes" aria-pressed="false" aria-controls="annotations">Mostrar anotaciones</button>
+    </nav>
+    <section aria-labelledby="route-title">
+      <div class="heading"><span class="eyebrow">ADQUISICIÓN NACIONAL</span><h1 id="route-title">RUTA A — COMPRA A PROVEEDOR NACIONAL</h1><p>Proceso comercial · Documentación y recepción · Flujo de caja</p></div>
+      <p class="interaction-hint">Pulsa un nodo para consultar su explicación, norma y fuente oficial.</p>
+      <p id="route-context" class="route-context" hidden></p>
+      <div id="diagram" class="diagram" aria-label="Diagrama de la Ruta A"></div>
+      <aside id="annotations" class="annotations" aria-label="Anotaciones de los nodos" hidden></aside>
+      <footer class="legend"><span><i class="solid"></i>Lectura del proceso</span><span><i class="dashed"></i>Vínculo comercial, sin secuencia temporal</span></footer>
+    </section>
+    <noscript>Activa JavaScript para visualizar el diagrama.</noscript>
+  </main>
+  <dialog id="node-detail" aria-labelledby="detail-title"><button type="button" id="close-detail" aria-label="Cerrar detalle">×</button><span class="eyebrow">DETALLE DEL NODO</span><h2 id="detail-title"></h2><div id="detail-content"></div></dialog>
+</body>
+</html>
