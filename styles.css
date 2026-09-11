@@ -1,11 +1,15 @@
 :root{--ink:#203540;--muted:#586974;--line:#a7b5bc;--accent:#1d5964;--border:#cbd6db;--soft:#f4f8f9;--radius:12px;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;font-size:16px}
-*{box-sizing:border-box}body{margin:0}button{font:inherit}button:focus-visible{outline:3px solid #237b90;outline-offset:4px}button:not(:disabled){cursor:pointer}button:disabled{cursor:not-allowed}button{touch-action:manipulation}.page{max-width:1160px;margin:auto;padding:30px 36px 24px}.masthead{display:flex;justify-content:space-between;align-items:center;padding-bottom:23px;border-bottom:1px solid var(--border);gap:16px}.brand{font-size:14px;letter-spacing:1.3px}.brand strong{font-size:23px;letter-spacing:2px;margin-left:7px}.masthead>span{font-size:14px;color:var(--muted)}.toolbar{display:flex;justify-content:space-between;gap:16px;margin:24px 0 32px;align-items:center}.routes{display:flex;gap:8px}.toolbar button{border:1px solid var(--border);border-radius:7px;padding:10px 14px;background:white;font-size:14px;min-height:42px}.toolbar .active{background:var(--ink);color:white;border-color:var(--ink)}.toolbar button:disabled{color:#67747b;background:#f6f7f8}.toolbar small{display:block;font-size:12px;margin-top:3px}.heading{text-align:center;margin-bottom:28px}.eyebrow{font-size:12px;font-weight:bold;letter-spacing:1.6px;color:var(--accent)}h1{font-size:clamp(20px,2.4vw,27px);line-height:1.35;margin:9px 0}p{line-height:1.55}.heading p{font-size:14px;color:var(--muted);margin:0}
+*{box-sizing:border-box}body{margin:0}button{font:inherit}button:focus-visible,.download-button:focus-visible{outline:3px solid #237b90;outline-offset:4px}button:not(:disabled){cursor:pointer}button:disabled{cursor:not-allowed}button{touch-action:manipulation}.page{max-width:1160px;margin:auto;padding:30px 36px 24px}.masthead{display:flex;justify-content:space-between;align-items:center;padding-bottom:23px;border-bottom:1px solid var(--border);gap:16px}.brand{font-size:14px;letter-spacing:1.3px}.brand strong{font-size:23px;letter-spacing:2px;margin-left:7px}.masthead>span{font-size:14px;color:var(--muted)}.toolbar{display:flex;justify-content:space-between;gap:16px;margin:24px 0 32px;align-items:center}.routes,.toolbar-actions{display:flex;gap:8px;align-items:center}.toolbar button,.download-button{border:1px solid var(--border);border-radius:7px;padding:10px 14px;background:white;font-size:14px;min-height:42px}.download-button{display:inline-flex;align-items:center;color:var(--accent);font-weight:700;text-decoration:none}.download-button:hover{border-color:var(--accent);background:var(--soft)}.toolbar .active{background:var(--ink);color:white;border-color:var(--ink)}.toolbar button:disabled{color:#67747b;background:#f6f7f8}.toolbar small{display:block;font-size:12px;margin-top:3px}.heading{text-align:center;margin-bottom:28px}.eyebrow{font-size:12px;font-weight:bold;letter-spacing:1.6px;color:var(--accent)}h1{font-size:clamp(20px,2.4vw,27px);line-height:1.35;margin:9px 0}p{line-height:1.55}.heading p{font-size:14px;color:var(--muted);margin:0}
 /* Three equal tracks keep the principal flow centered; cash occupies the right track. */
 .diagram{display:grid;grid-template-columns:1fr minmax(290px,1.2fr) 1fr;align-items:center;column-gap:26px;max-width:1050px;margin:auto}.node{display:block;width:100%;position:relative;border:1.5px solid var(--border);border-radius:var(--radius);background:#fff;padding:20px 18px;text-align:center;color:var(--ink);line-height:1.45;min-height:72px}.node:hover{border-color:var(--accent);background:var(--soft)}.node-title{display:block;font-weight:700;font-size:14px;letter-spacing:.2px}.node.terminal{border-radius:100px;width:150px;min-height:42px;padding:11px 20px;justify-self:center;background:var(--ink);color:white;border-color:var(--ink)}.main-node{grid-column:2}.arrow{grid-column:2;height:31px;position:relative;justify-self:center;width:1px;background:var(--line)}.arrow::after{content:"";position:absolute;bottom:0;left:-4px;border-top:7px solid var(--line);border-left:4.5px solid transparent;border-right:4.5px solid transparent}.agreement{grid-column:2}.cash{grid-column:3;position:relative;align-self:center}.cash::before{content:"";position:absolute;top:50%;left:-26px;width:26px;border-top:2px dashed var(--accent)}.cash .node{border:1.5px dashed var(--accent);background:var(--soft);padding:16px 14px}.node-label{display:block;font-size:12px;font-weight:700;color:var(--accent);letter-spacing:1px;margin-bottom:8px}.essential{display:block;font-size:14px;font-weight:400;color:var(--muted);margin-top:9px;line-height:1.5}.pair{grid-column:1/-1;width:min(100%,720px);justify-self:center;border:1px solid var(--border);border-radius:16px;padding:18px;background:#fafcfc}.pair-header{text-align:center;font-size:12px;letter-spacing:1px;font-weight:bold;color:var(--muted);margin:0 0 14px}.pair-nodes{display:grid;grid-template-columns:1fr 1fr;gap:18px}.pair .node{height:100%}.pair-caption{text-align:center;font-size:14px;color:var(--muted);line-height:1.5;margin:14px 0 0}.credit .node{border-color:var(--accent)}.legend{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:19px;margin-top:30px;font-size:12px;color:var(--muted)}.legend span{display:flex;align-items:center;gap:8px}.legend i{display:inline-block;width:24px;border-top:1px solid var(--line)}.legend .dashed{border-top:2px dashed var(--accent)}.annotations{max-width:720px;margin:26px auto 0;padding:20px 24px;border:1px solid var(--border);border-radius:var(--radius);background:var(--soft)}.annotations h2{font-size:18px;margin:0 0 15px}.annotations h3{font-size:14px;margin:18px 0 5px}.annotations p{font-size:14px;margin:0}.annotations a,dialog a{color:var(--accent);overflow-wrap:anywhere}dialog{max-width:520px;width:calc(100% - 32px);border:1px solid var(--border);border-radius:16px;padding:32px;color:var(--ink)}dialog::backdrop{background:#142b3b55}dialog h2{font-size:20px;line-height:1.4;padding-right:12px}dialog p{font-size:16px}#close-detail{position:absolute;right:12px;top:8px;font-size:28px;border:0;background:transparent;color:var(--muted);width:36px;height:36px}
 .node-source{display:block;font-size:12px;font-weight:400;color:var(--accent);line-height:1.5;margin-top:12px;padding-top:10px;border-top:1px solid var(--border)}
 .node.credit{border-color:var(--accent)}
 .legal-basis{font-weight:bold;color:var(--accent);border-top:1px solid var(--border);padding-top:12px}
 .annotations section p{margin:10px 0}.annotations section{padding-bottom:16px}
+.detail-section{margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
+.detail-section h3{font-size:15px;margin:0 0 10px}.detail-section p{margin:10px 0}
+.operational-example{white-space:pre-wrap;overflow-wrap:anywhere;margin:12px 0;padding:15px;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;background:#fff;color:var(--ink);font:13px/1.55 Consolas,"Courier New",monospace}
+.control-list{margin:10px 0;padding-left:22px;line-height:1.6}.detail-conclusion{padding:12px 14px;border-radius:8px;background:#eaf1f3;color:var(--ink);font-weight:700}
 dialog{max-width:650px;max-height:85vh;overflow:auto}.node{transition:background-color .18s,border-color .18s}
 @media(prefers-reduced-motion:reduce){.node{transition:none}}
 /* Essential timing explanations remain visible when optional annotations are hidden. */
@@ -24,6 +28,7 @@ dialog{max-width:650px;max-height:85vh;overflow:auto}.node{transition:background
 .b-node-wrap .node.terminal{background:var(--ink);padding:11px 20px}
 .b-node-wrap .node-source{font-size:12px;letter-spacing:0}
 .b-node-wrap.event .node{border:1.5px dashed var(--accent);background:var(--soft)}
+.b-node-wrap.guidance .node{border-color:var(--accent);background:var(--soft)}
 .b-node-wrap.decision .node{min-height:210px;padding:55px 35px;border:0;border-radius:0;background-color:transparent;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 210' preserveAspectRatio='none'%3E%3Cpath d='M150 1 L299 105 L150 209 L1 105 Z' fill='%23f4f8f9' stroke='%231d5964' stroke-width='1.5'/%3E%3C/svg%3E");background-size:100% 100%;background-repeat:no-repeat}
 .b-node-wrap.decision .node-title{font-size:14px;max-width:180px;margin:auto}
 .b-node-wrap.decision .node-source{border:0;padding:0;margin:8px 0 0;font-size:12px;max-width:165px;margin-left:auto;margin-right:auto}
@@ -31,6 +36,9 @@ dialog{max-width:650px;max-height:85vh;overflow:auto}.node{transition:background
 .b-node-wrap.stop .node{border:2px solid #63727b;border-radius:28px}
 .edge-label{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;fill:var(--ink);paint-order:stroke;stroke:white;stroke-width:5px;stroke-linejoin:round}
 .mobile-outcomes{display:none}
+
+/* Ruta C usa la misma paleta corporativa y jerarquía visual que las rutas A y B. */
+.route-c{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 62px}
 /* En pantalla estrecha cada conexión se convierte en un enlace de recorrido explícito. */
 @media(max-width:760px){
   .diagram-b{display:flex;flex-direction:column;align-items:stretch;gap:28px;max-width:480px;padding:0}
@@ -40,6 +48,8 @@ dialog{max-width:650px;max-height:85vh;overflow:auto}.node{transition:background
   .diagram-b .mobile-outcomes{display:flex;width:100%;flex-direction:column;gap:6px;margin-top:10px}
   .outcome{background:white;border:1px solid var(--border);padding:10px 12px;border-radius:6px;color:var(--accent);text-align:left;font-size:12px;line-height:1.5}
   .diagram-b .b-node-wrap.decision .node{max-width:340px}
+  .toolbar-actions{width:100%;flex-wrap:wrap}
+  .download-button{flex:1;justify-content:center;text-align:center}
 }
 @media print{
   .route-context{font-size:12px;margin-bottom:20px}
@@ -48,3 +58,64 @@ dialog{max-width:650px;max-height:85vh;overflow:auto}.node{transition:background
   .diagram-b .mobile-outcomes{display:none}
   .diagram-b .connectors{display:block}
 }
+/* Ruta A: priority belongs in small badges, legal detail in a right drawer. */
+.risk-tools{max-width:1050px;margin:0 auto 32px;border:1px solid var(--border);border-radius:12px;padding:18px 22px;background:var(--soft)}
+.risk-tools>p:first-child{font-size:14px;font-weight:700;margin:0 0 12px}.risk-tool-actions{display:flex;flex-wrap:wrap;gap:10px}.risk-tool-actions button{background:white;border:1px solid var(--border);border-radius:7px;padding:10px 14px;color:var(--accent)}.risk-help{font-size:13px;color:var(--muted);margin:12px 0 0}
+.route-a{gap:44px 60px}.route-a .node-source{display:none}.route-a .node-title{font-size:13px}.route-a .node.terminal{width:210px;max-width:100%}.route-a .b-node-wrap.decision .node{min-height:190px;padding:40px 28px}.route-a .b-node-wrap.decision .node-title{max-width:180px}.route-a .essential{font-size:12px}
+.risk-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;margin-top:12px;font-size:11px;font-weight:600;letter-spacing:0}.risk-badges>span{padding:4px 6px;border-radius:5px;background:#edf3f4;color:var(--accent)}.risk-badges .risk-critical{background:#fbefed;color:#94392e}.route-a .decision .risk-badges{gap:3px}.route-a .decision .risk-badges>span{font-size:10px;padding:3px}
+dialog.risk-drawer{position:fixed;inset:0 0 0 auto;margin:0;width:min(620px,100%);max-width:100%;height:100dvh;max-height:100dvh;border-radius:16px 0 0 16px;padding:30px;overscroll-behavior:contain;box-shadow:-12px 0 40px #20354022}dialog.risk-drawer h2{margin-bottom:22px}dialog.risk-drawer #close-detail{position:sticky;float:right;top:0;background:white;border-radius:50%;z-index:2}
+.risk-card{margin:14px 0;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px;background:#fff}.risk-card.critico{border-left-color:#a1493c}.risk-card.atencion{border-left-color:#b68739}.risk-card summary{font-size:15px;font-weight:700;cursor:pointer;line-height:1.5}.risk-card h3{font-size:12px;text-transform:uppercase;letter-spacing:.6px;margin:20px 0 5px;color:var(--muted)}.risk-card p{font-size:14px;margin:5px 0 12px}.risk-source{display:block;font-size:12px;margin:10px 0;line-height:1.4}.risk-action{padding:12px;border-radius:7px;background:var(--soft);font-size:14px}.risk-search{display:block;width:100%;padding:13px;border:1px solid var(--border);border-radius:7px;font:inherit;margin:16px 0}
+@media(max-width:760px){.route-a{gap:24px}.risk-tools{padding:16px}.risk-tool-actions button{flex:1}.route-a .b-node-wrap.decision .node{min-height:190px}.risk-drawer{padding:22px!important}.route-a .node-title{font-size:14px}}
+@media print{.risk-tools,.risk-badges{display:none}.route-a .b-node-wrap.decision .node{min-height:170px}.route-a{gap:34px 40px}}
+.route-b-risks .risk-badges{display:flex}.route-b-risks.audit-mode .node-source{display:block}.route-b-risks.audit-mode .node{box-shadow:0 2px 8px #2035400b}.route-b-risks .stop .node{border-color:#ad655c;background:#fff8f6}.route-b-risks .b-node-wrap.terminal .node.terminal{width:180px!important;min-height:72px!important;border-radius:50% / 50%!important;display:flex;align-items:center;justify-content:center;padding:14px 24px}.route-b-risks .decision .essential{max-width:180px;margin-left:auto;margin-right:auto}
+.audit-metrics{display:none;font-size:11px;color:var(--muted);margin-top:9px}.audit-mode .audit-metrics{display:block}
+.route-c-risks .terminal{border-radius:50%!important;min-height:64px!important}.route-c-risks .stop .node,.route-c-risks .issue .node{border-color:#ad655c;background:#fff8f6}.route-c-risks.audit-mode .node-source{display:block}.route-c-risks .decision .essential{max-width:180px;margin-left:auto;margin-right:auto}
+
+
+/* Ruta A final: separa explícitamente el flujo operacional del carril tributario. */
+.route-a-flow{grid-template-columns:repeat(4,minmax(0,1fr));gap:44px 42px}
+.route-a-flow .b-node-wrap{width:100%;max-width:390px;justify-self:center}
+.route-a-flow .b-node-wrap.operation .node{border-color:var(--border);background:#fff}
+.route-a-flow .b-node-wrap.tax .node{border-color:var(--accent);background:var(--soft)}
+.route-a-flow .b-node-wrap.tax.decision .node{background-color:transparent}
+.route-a-flow .b-node-wrap.operation .node-label,.route-a-flow .b-node-wrap.tax .node-label{font-size:11px;letter-spacing:1.05px}
+.route-a-flow .b-node-wrap.event .node{border-style:dashed}
+@media(max-width:760px){
+  .route-a-flow{display:flex;flex-direction:column;gap:24px;max-width:480px}
+  .route-a-flow .b-node-wrap{max-width:none}
+}
+@media print{
+  .route-a-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 28px;max-width:none}
+}
+
+/* Corrección visual exclusiva de A: conservar el SVG del rombo sobre ambos carriles. */
+.route-a-flow{row-gap:64px;column-gap:56px}
+.route-a-flow .b-node-wrap.decision .node{
+ background-color:transparent;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 210' preserveAspectRatio='none'%3E%3Cpath d='M150 1 L299 105 L150 209 L1 105 Z' fill='%23f4f8f9' stroke='%231d5964' stroke-width='1.5'/%3E%3C/svg%3E");
+ background-size:100% 100%;background-repeat:no-repeat;border:0;border-radius:0;
+ padding:64px 48px;min-height:240px
+}
+.route-a-flow .decision .node-label,.route-a-flow .decision .essential{max-width:200px;margin-left:auto;margin-right:auto}
+.route-a-flow .b-node-wrap.terminal .node.terminal{width:290px;max-width:100%;height:70px;min-height:70px;border-radius:32px;display:flex;justify-content:center;align-items:center;padding:12px 24px}
+@media(max-width:760px){.route-a-flow{gap:24px}.route-a-flow .b-node-wrap.decision .node{padding:60px 42px}}
+/* B/B2: dos carriles aduaneros independientes; convergencia sólo tras autorización. */
+.page:has(.route-b-risks){max-width:1880px}
+.route-b-risks{max-width:1760px;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:42px;row-gap:64px}
+.route-b-risks .b-node-wrap{max-width:360px;width:100%;justify-self:center}
+.route-b-risks .tax .node{background:var(--soft);border-color:var(--accent)}
+.route-b-risks .decision .node{padding:64px 30px;min-height:250px}
+.route-c-risks .decision .node{padding:64px 35px;min-height:250px}
+.route-c-risks{row-gap:64px}
+.route-c-risks .tax .node{background:var(--soft);border-color:var(--accent)}
+@media(max-width:1250px){
+ .route-b-risks{display:flex;flex-direction:column;align-items:stretch;max-width:620px;gap:24px}
+ .route-b-risks .connectors{display:none}
+ .route-b-risks .b-node-wrap{max-width:none}
+ .route-b-risks .mobile-outcomes{display:flex;flex-direction:column;gap:6px;width:100%;margin-top:10px}
+ .route-b-risks .outcome{background:white;border:1px solid var(--border);padding:10px;border-radius:6px;color:var(--accent);text-align:left;font-size:12px}
+}
+.route-b-risks .decision .node-label{max-width:120px;margin-left:auto;margin-right:auto;letter-spacing:.5px}
+.route-b-risks .decision .essential{max-width:140px}
+.route-b-risks .decision .risk-badges{max-width:145px;margin-left:auto;margin-right:auto}
+.route-b-risks .b-node-wrap.decision .node{padding-top:85px;padding-bottom:85px}
